@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasmine Flower Stall</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <!-- Intro overlay: dramatic full-screen entrance -->
+    <div id="intro-overlay" class="intro-overlay" aria-hidden="false">
+      <div class="intro-inner">
+        <div class="intro-logo">Jasmine Flower Stall</div>
+        <p class="intro-tag">A bright garden of hand-picked blooms</p>
+        <button id="enter-site" class="btn">Enter the garden</button>
+      </div>
+      <div class="float-shape shape-a"></div>
+      <div class="float-shape shape-b"></div>
+    </div>
+    <header class="topbar">
+      <a class="brand" href="index.html">Jasmine Flower Stall</a>
+      <nav class="nav">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="order.html">Order</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Curated collection</p>
+          <h1>Shop the latest items.</h1>
+        </div>
+        <div class="hero-panel">
+          <div>
+            <span class="panel-label">Products</span>
+            <strong>Flower items</strong>
+          </div>
+          <div>
+            <span class="panel-label">Support</span>
+            <strong>Always available</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-header">
+        <div>
+          <p class="eyebrow">Featured products</p>
+          <h2>Browse the collection</h2>
+        </div>
+      </section>
+
+      <section id="product-grid" class="product-grid" aria-live="polite"></section>
+
+      <!-- Minimal product detail modal (opened when clicking an image) -->
+      <div id="product-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true">
+          <img id="modal-image" src="" alt="" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

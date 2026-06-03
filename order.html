@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order - Jasmine Flower Stall</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">Jasmine Flower Stall</a>
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="order.html">Order</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero order-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Place your order</p>
+          <h1>Send your flower request in one step.</h1>
+        </div>
+      </section>
+
+      <section class="order-layout">
+        <form id="order-form" class="contact-form order-form" novalidate>
+          <div class="form-grid two-up">
+            <label>
+              Name :
+              <input name="name" type="text" placeholder="Your name" required />
+            </label>
+          </div>
+
+          <div class="form-grid two-up">
+            <label>
+              Email
+              <input id="order-email" name="email" type="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Phone number
+              <input id="order-phone" name="phone" type="tel" placeholder="+91 9XXXXXXXXX" />
+            </label>
+          </div>
+          <p id="order-error" class="form-error" aria-live="polite"></p>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Submit Details</button>
+          </div>
+        </form>
+
+        <aside class="order-note">
+                    <p class="hero-text">
+            Add either an email address or a phone number, plus the expected price and an optional message.
+          </p>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
