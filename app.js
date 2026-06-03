@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const orderButton = orderForm?.querySelector('button[type="submit"]');
 
   if (window.emailjs) {
-    window.emailjs.init("adadYm2X7OAr-KVjJ");
+    window.emailjs.init("LIaaxc6DaXsvcLzsC");
   }
 
   function revealSite() {
